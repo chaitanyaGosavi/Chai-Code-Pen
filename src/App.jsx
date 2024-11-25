@@ -33,7 +33,7 @@ function App() {
     <>
       <NavBar />
       <div className='flex flex-col w-[100vw] h-[93vh] bg-slate-700 justify-between'>
-        <div className="bg-[#121212] flex-1 w-full h-1/2 flex gap-5 p-2 overflow-x-scroll md:overflow-x-hidden">
+        <div className="bg-[#121212] flex-1 w-full h-1/2 flex flex-col md:flex-row gap-5 p-2 overflow-x-scroll md:overflow-x-hidden">
           <Editor value={html} onChange={setHtml} langColor='#ff5c4e' langTag='</>' displayName='HTML' language='xml' />
           <Editor value={css} onChange={setCss} langColor='#57a0ff' langTag='#' displayName='CSS' language='css' />
           <Editor value={js} onChange={setJs} langColor='#f9ff43' langTag='{ }' displayName='JS' language='javascript' />
